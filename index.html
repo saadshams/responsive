@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Presentation</title>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/presentations/layout.css" rel="stylesheet" type="text/css">
+<link href="css/presentations/module-header.css" rel="stylesheet" type="text/css">
+<link href="css/presentations/module-list.css" rel="stylesheet" type="text/css">
+<link href="css/presentations/module-thumbnails.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/header.js" defer></script>
+</head>
+
+<body>
+<main class="create" role="main">
+  <header>
+    <h2 id="listTitle">Presentations</h2>
+    <input type="checkbox" name="checkbox" id="listCheckbox">
+    <nav id="listNav">
+      <ul>
+        <li data-id="list">Presentations</li>
+        <li data-id="create">Create</li>
+      </ul>
+    </nav>
+    <label for="listCheckbox"><span class="fas fa-angle-down"></span></label>
+  </header>
+  <section id="userList">
+    <table summary="From each column header, you can sort and filter the records in that column.">
+      <thead>
+        <tr>
+          <th scope="col">Thumbnail</th>
+          <th scope="col">Title</th>
+          <th scope="col">Date Created</th>
+          <th scope="col">View</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://picsum.photos/25/25/?random&r=1" alt="title" /></td>
+          <td>Lorem ipsum</td>
+          <td>Nov 3, 2017</td>
+          <td><span class="fas fa-eye"></span></td>
+          <td><span class="fas fa-edit"></span></td>
+          <td><span class="fas fa-trash-alt"></span></td>
+        </tr>
+        <tr>
+          <td><img src="https://picsum.photos/25/25/?random&r=2" alt="title" /></td>
+          <td>dolor sit amet</td>
+          <td>Dec 3, 2017</td>
+          <td><span class="fas fa-eye"></span></td>
+          <td><span class="fas fa-edit"></span></td>
+          <td><span class="fas fa-trash-alt"></span></td>
+        </tr>
+        <tr>
+          <td><img src="https://picsum.photos/25/25/?random&r=3" alt="title" /></td>
+          <td>consectetur adipiscing elit.</td>
+          <td>Jan 12, 2018</td>
+          <td><span class="fas fa-eye"></span></td>
+          <td><span class="fas fa-edit"></span></td>
+          <td><span class="fas fa-trash-alt"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="create">
+    <section id="select" class="my">
+      <header>
+        <h2 id="createTitle">My Articles</h2>
+        <input type="checkbox" name="checkbox" id="createCheckbox">
+        <nav id="createNav">
+          <ul>
+            <li data-id="my">My Articles</li>
+            <li data-id="global">Global Articles</li>
+          </ul>
+        </nav>
+        <label for="createCheckbox"><span class="fas fa-angle-down"></span></label>
+      </header>
+      <ul id="my" class="thumbnails">
+        <li><img src="https://picsum.photos/250/250/?random&r=1" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=2" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=3" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=4" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=5" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=6" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=7" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=8" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=9" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=10" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=11" alt="title" /></li>
+      </ul>
+      <div class="message message-icon" id="myMessage">
+        <div class="fas fa-file"></div>
+        <span>Presentations Not Found</span> </div>
+      <ul id="global" class="thumbnails">
+		<li><img src="https://picsum.photos/250/250/?random&r=11" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=21" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=31" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=41" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=51" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=61" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=71" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=81" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=91" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=21" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=22" alt="title" /></li>
+      </ul>
+      <div class="message message-icon" id="globalMessage">
+        <div class="fas fa-file"></div>
+        <span>Presentations Not Found2</span> </div>
+    </section>
+    <section id="save">
+      <header>
+        <input name="collection" type="text" id="collection" placeholder="Presentation Name">
+        <input name="upload" type="button" class="btn" id="uploadButton" value="Upload">
+        <input name="save" type="button" class="btn" id="saveButton" value="Save">
+      </header>
+      <ul class="thumbnails">
+        <li><img src="https://picsum.photos/250/250/?random&r=12" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=2" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=3" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=4" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=5" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=6" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=7" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=8" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=9" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=10" alt="title" /></li>
+        <li><img src="https://picsum.photos/250/250/?random&r=11" alt="title" /></li>
+      </ul>
+      <div class="message">Drop Articles Here</div>
+    </section>
+  </section>
+</main>
+</body>
+</html>

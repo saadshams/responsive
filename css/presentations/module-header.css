@@ -1,0 +1,77 @@
+@charset "UTF-8";
+header  {
+	background-color: #F3F3F3;
+	border-bottom: thin solid #D6D6D6;
+	display: block;
+	height: 40px;
+	position: relative;
+}
+header h2 {
+	display: inline-block;
+	color: #444444;
+	font-size: 14px;
+	font-weight: bold;
+	left: 15px;
+	margin-left: 15px;
+	width: 110px;
+}
+header > input[type="checkbox"] {
+	display: none;
+}
+nav {
+	visibility: hidden;
+	display: inline-block;
+	border: 1px solid #C6C6C6;
+	background-color: #FFFFFF;
+	width: 175px;
+	z-index: 100;
+	position: absolute;
+	left: 15px;
+	top: 35px;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+nav ul li {
+	display: block;
+	padding: 5px 5px 5px 15px;
+	font-size: 14px;
+}
+nav ul li:hover  {
+	background-color: #e7eff7;
+}
+header > input[type="checkbox"]:checked ~ nav {
+	visibility: visible;
+}
+nav + label {
+	display: inline-block;
+	padding: 3px;
+	vertical-align: top;
+	margin-top: 5px;
+	margin-left: 20px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+#save input[type="text"] {
+	width: 50%;
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	margin: 8px;
+	color: #000000;
+	font-size: 14px;
+}
+.btn {
+	height: 24px;
+	background-color: #0078D7;
+	border: thin solid #D4D4D4;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 0 15px 1px 19px;
+	cursor: pointer;
+}

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+#save input[type="text"] {
+	width: 50%;
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	margin: 8px;
+	color: #000000;
+	font-size: 14px;
+}
+#save input[type="button"] {
+	height: 24px;
+	background-color: #0078D7;
+	border: thin solid #D4D4D4;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 0 15px 1px 19px;
+	cursor: pointer;
+}

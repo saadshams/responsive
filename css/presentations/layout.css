@@ -1,0 +1,100 @@
+@charset "UTF-8";
+main {
+	max-width: 2400px;
+	min-width: 320px;
+	margin: 10px;
+	border: thin solid #BFC5C6;
+}
+.message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	font-size: 16px;
+}
+.message.message-icon > div {
+	display: block;
+	font-size: 40px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+*:empty +.message   {
+	display: block;
+}
+#userList {
+	display: none;
+}
+main.list #userList {
+	display: block;
+	margin: 10px;
+}
+#create {
+	display: none;
+	margin: 10px;
+}
+main.create #create {
+	display: block;
+}
+#create #select {
+	border: thin solid #BFC5C6;
+	box-sizing: border-box;
+	min-height: 434px;
+}
+#create #my {
+	display: none;
+}
+#create #global {
+	display: none;
+}
+#select.my #my {
+	display: block;
+}
+.my #globalMessage {
+	display: none;
+}
+#select.global #global {
+	display: block;
+}
+.global #myMessage {
+	display: none;
+}
+#create #save {
+	border: thin solid #BFC5C6;
+	margin-top: 10px;
+	min-height: 434px;
+	box-sizing: border-box;
+}
+#analytics {
+	display: none;
+}
+main.analytics #analytics {
+	display: block;
+	margin: 10px;
+}
+
+@media screen and (min-width:576px) {
+}
+
+@media screen and (min-width:767px) {
+#create #select {
+	display: inline-block;
+	width: calc(50% - 5px);
+	margin-right: 5px;
+	vertical-align: top;
+	position: relative;
+}
+#create #save {
+	display: inline-block;
+	width: calc(50% - 5px);
+	margin-top: 0px;
+	vertical-align: top;
+	position: relative;
+}
+}
+
+@media screen and (min-width:2400px) {
+	main {
+		margin: 10px auto;
+	}
+}
